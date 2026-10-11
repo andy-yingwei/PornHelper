@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--防止cardview内部内容与边角重叠 app:cardPreventCornerOverlap="true"-->
+<!--阴影  app:cardElevation="10dp"-->
+<!--背景颜色 app:cardBackgroundColor="@color/colorAccent"-->
+<!--圆角 app:cardCornerRadius="10dp"-->
+<!--内容内边距 app:contentPadding="4dp"-->
+<!--开启点击效果 android:clickable="true"-->
+<!--设置水波纹点击效果 android:foreground="?android:attr/selectableItemBackground"-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/black_10"
+    app:cardCornerRadius="@dimen/value_0dp">
+
+    <TextView
+        android:id="@+id/tagView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/value_4dp"
+        android:background="@drawable/bg_pill_outline"
+        android:text="@string/tag_text"
+        android:textColor="@color/black_60"
+        android:textSize="@dimen/text_14sp"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/value_12dp"
+        android:paddingEnd="@dimen/value_12dp"
+        android:paddingTop="@dimen/value_4dp"
+        android:paddingBottom="@dimen/value_4dp"
+        android:gravity="center"
+        android:clickable="false"
+        android:focusable="false" />
+
+</androidx.cardview.widget.CardView>

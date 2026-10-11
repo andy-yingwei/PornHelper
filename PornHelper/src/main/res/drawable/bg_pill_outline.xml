@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+    <!-- 药丸关键：圆角 = 高度的一半，这里用大值兜底 -->
+    <corners android:radius="999dp" />
+
+    <!-- 描边 -->
+    <stroke
+        android:width="1dp"
+        android:color="#938F99" /><!-- 或用 #BDBDBD -->
+
+    <!-- 背景色（Material 默认透明或 surface） -->
+    <solid android:color="@android:color/transparent" />
+
+    <padding
+        android:top="0dp"
+        android:bottom="0dp" />
+</shape>

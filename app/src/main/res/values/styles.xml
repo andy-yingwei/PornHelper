@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActorAvatarView.FavoriteGold">
+        <item name="sparkbutton_primaryColor">@color/red</item>
+        <item name="sparkbutton_secondaryColor">@color/gold</item>
+        <item name="sparkbutton_iconSize">22dp</item>
+        <item name="sparkbutton_animationSpeed">1.0</item>
+        <item name="sparkbutton_activeImage">@drawable/ic_face_smiles</item>
+        <item name="sparkbutton_inActiveImage">@drawable/ic_face_sading</item>
+    </style>
+</resources>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="avatar_describe">这是头像</string>
+    <string name="image_describe">这是图片</string>
+    <string name="cover_describe">这是封面</string>
+    <string name="cast_text">风清扬</string>
+    <string name="tag_text">活力满满</string>
+    <string name="magnet_title">HAZ12-12345</string>
+    <string name="magnet_text">下 载</string>
+    <string name="magnet_size">2.4G</string>
+    <string name="magnet_downloads">1,834次</string>
+    <string name="source_text">720p</string>
+    <string name="actor_name">风清扬</string>
+    <string name="actor_video_count">720部</string>
+    <string name="actor_views">订阅数量 5306</string>
+    <string name="actor_rank_rating">%87</string>
+    <string name="video_title">温泉旅馆的老板娘真热情，非要邀请我去他的房间给我看她的大宝贝！</string>
+    <string name="video_views">76720</string>
+    <string name="video_rank_rating">%87</string>
+    <string name="actor_age">年龄：24</string>
+    <string name="actor_birthday">生日：2015-12-23</string>
+    <string name="actor_height">身高：174cm</string>
+    <string name="actor_weight">体重：87斤</string>
+    <string name="actor_bust">胸围：36B</string>
+    <string name="actor_hips">臀围：87cm</string>
+    <string name="actor_nationality">国籍：日本</string>
+    <string name="actor_birthplace">出生地：日本大阪冲绳县</string>
+    <string name="actor_tags">标签: 辣妹  少女  丰满</string>
+    <string name="favorite_text">点击收藏</string>
+    <string name="actor">演  员: </string>
+    <string name="tags">标  签: </string>
+    <string name="download">下  载: </string>
+    <string name="playSource">播放源: </string>
+
+</resources>
