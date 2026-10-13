@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#d0021b</color>
+    <color name="favorite">#d0021b</color>
+    <color name="secondaryColor">#FBC02D</color>
+    <color name="gold">#FBC02D</color>
+    <color name="blue">#0543FD</color>
+
+    <!--黑-->
+    <color name="black">#000000</color>
+    <color name="black_10">#191919</color>
+    <color name="black_20">#333333</color>
+    <color name="black_30">#4d4d4d</color>
+    <color name="black_40">#666666</color>
+    <color name="black_50">#808080</color>
+    <color name="black_60">#999999</color>
+    <color name="black_70">#b3b3b3</color>
+    <color name="black_80">#cccccc</color>
+    <color name="black_90">#e6e6e6</color>
+    <color name="black_100">#ffffff</color>
+
+    <!--白-->
+    <color name="white">#ffffff</color>
+    <color name="white_10">#e6e6e6</color>
+    <color name="white_20">#cccccc</color>
+    <color name="white_30">#b3b3b3</color>
+    <color name="white_40">#999999</color>
+    <color name="white_50">#808080</color>
+    <color name="white_60">#666666</color>
+    <color name="white_70">#4d4d4d</color>
+    <color name="white_80">#333333</color>
+    <color name="white_90">#191919</color>
+    <color name="white_100">#000000</color>
+
+
+
+    <!--白天-->
+    <color name="day_bg">#FFFFFF</color>
+    <color name="day_text">#000000</color>
+    <color name="day_primary">#D0021B</color>
+
+    <color name="spark_primary">#0543FD</color>
+    <color name="spark_secondary">#2756DB</color>
+</resources>
