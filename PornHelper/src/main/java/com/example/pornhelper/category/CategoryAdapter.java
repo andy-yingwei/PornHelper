@@ -26,12 +26,10 @@ import com.example.glidehelper.AesOption;
 import com.example.glidehelper.ImageLoader;
 import com.example.glidehelper.LoadOption;
 import com.example.pornhelper.R;
-import com.example.pornhelper.actor.ActorLite;
 import com.example.pornhelper.helper.DebugLog;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
 /**

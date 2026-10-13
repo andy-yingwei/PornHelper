@@ -7,6 +7,7 @@ import androidx.annotation.DrawableRes;
 
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.pornhelper.R;
+import com.example.pornhelper.helper.ResHelper;
 
 /**
  * ============================================================
@@ -227,7 +228,7 @@ public final class VideoProfileConfig {
      * ========================================================= */
     public static VideoProfileConfig defaultConfig(Context ctx) {
         return new Builder()
-                .background(Colors.of(ctx, R.color.black))
+                .background(ResHelper.getColor(ctx, R.color.black))
                 .backgroundRadius(0)
 
                 .coverHeight(240)
@@ -238,22 +239,22 @@ public final class VideoProfileConfig {
                 .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
 
                 .titleTextSize(16)
-                .titleTextColor(Colors.of(ctx, R.color.white))
+                .titleTextColor(ResHelper.getColor(ctx, R.color.white))
 
                 .arrowSize(24)
                 .arrowCollapsed(R.drawable.ic_arrow_down)
                 .arrowExpanded(R.drawable.ic_arrow_up)
-                .arrowColor(Colors.of(ctx, R.color.white))
+                .arrowColor(ResHelper.getColor(ctx, R.color.white))
 
                 .iconButtonSize(35)
                 .favoriteIconUnselected(R.drawable.ic_star)
                 .favoriteIconSelected(R.drawable.ic_star_fill)
-                .favoriteIconColor(Colors.of(ctx, R.color.red))
+                .favoriteIconColor(ResHelper.getColor(ctx, R.color.red))
                 .downloadIcon(R.drawable.ic_download)
-                .downloadIconColor(Colors.of(ctx, R.color.blue))
+                .downloadIconColor(ResHelper.getColor(ctx, R.color.blue))
 
                 .biographyTextSize(12)
-                .biographyTextColor(Colors.of(ctx, R.color.white))
+                .biographyTextColor(ResHelper.getColor(ctx, R.color.white))
 
                 // cookies / headers 默认 null
                 .build();

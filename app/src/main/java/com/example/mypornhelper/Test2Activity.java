@@ -81,9 +81,9 @@ public class Test2Activity extends AppCompatActivity{
         studioList.add(new Studio("","魔域4",COVER,"视频：1342部","好评：90%","排名：2",true,""));
         studioList.add(new Studio("","魔域5",COVER,"视频：1342部","好评：90%","排名：2",true,""));
         StudioConfig studioConfig = new StudioConfig.Builder()
-                .backgroundColor(Colors.of("#1e1e1e"))
-                .infoTextColor(Colors.of("#9e9e9e"))
-                .nameTextColor(Colors.of("#ededed"))
+                .backgroundColor(ResHelper.parseColor("#1e1e1e"))
+                .infoTextColor(ResHelper.parseColor("#9e9e9e"))
+                .nameTextColor(ResHelper.parseColor("#ededed"))
                 .favoriteIcon(R.drawable.ic_heart_fill)
                 .favoriteIconSize(30)
                 .build();
@@ -105,9 +105,9 @@ public class Test2Activity extends AppCompatActivity{
         acotrLiteList.add(new ActorLite("","波多野结衣6",COVER,"视频:76部","","","排名3",true,""));
         acotrLiteList.add(new ActorLite("","波多野结衣7",null,"视频:76部","","","排名3",true,""));
         ActorLiteConfig actorLiteConfig = new ActorLiteConfig.Builder()
-                .backgroundColor(Colors.of("#1e1e1e"))
-                .infoTextColor(Colors.of("#9e9e9e"))
-                .nameTextColor(Colors.of("#ededed"))
+                .backgroundColor(ResHelper.parseColor("#1e1e1e"))
+                .infoTextColor(ResHelper.parseColor("#9e9e9e"))
+                .nameTextColor(ResHelper.parseColor("#ededed"))
                 .favoriteIcon(R.drawable.ic_heart_fill)
                 .build();
         ActorLiteAdapter actorLiteAdapter = new ActorLiteAdapter(acotrLiteList,actorLiteConfig);

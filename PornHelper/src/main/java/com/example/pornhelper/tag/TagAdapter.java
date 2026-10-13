@@ -90,23 +90,16 @@ import java.util.List;
 public class TagAdapter extends ListAdapter<Tag, TagAdapter.ViewHolder> {
 
     /* ==================== 日志控制 ==================== */
-
-    /** 默认 tag */
-    private final String DEFAULT_TAG = "TagAdapter";
-
-    /** DebugLog 实例 */
-    private DebugLog debugLog = new DebugLog(DEFAULT_TAG);
-
-    /** 实例级开关，默认关闭 */
-    private boolean enabled = false;
+    private static final String DEFAULT_TAG = "TagAdapter";
+    private static DebugLog debugLog = new DebugLog(DEFAULT_TAG);
+    private static boolean enabled = false;
 
     /**
      * 开启 TagAdapter 日志，传入自定义 tag，为 null 或空时自动使用默认 tag。
      * 日志受全局 DebugLog 开关和实例级开关双重控制。
      */
-    public void enableLog(String tag) {
-        this.enabled = true;
-        DebugLog.enableLog();
+    public static void enableLog(String tag) {
+        enabled = true;
         debugLog = new DebugLog((tag != null && !tag.trim().isEmpty()) ? tag : DEFAULT_TAG);
     }
 
@@ -114,7 +107,7 @@ public class TagAdapter extends ListAdapter<Tag, TagAdapter.ViewHolder> {
      * 关闭 TagAdapter 日志，不影响 DebugLog 全局开关。
      */
     public void disableLog() {
-        this.enabled = false;
+        enabled = false;
     }
 
     /* ==================== DiffUtil ==================== */

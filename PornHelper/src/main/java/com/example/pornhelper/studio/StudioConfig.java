@@ -7,6 +7,7 @@ import androidx.annotation.DrawableRes;
 
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.pornhelper.R;
+import com.example.pornhelper.helper.ResHelper;
 
 /**
  * ============================================================
@@ -170,7 +171,7 @@ public final class StudioConfig {
     public static StudioConfig defaultConfig(Context ctx) {
         return new Builder()
                 /* 卡片 */
-                .backgroundColor(Colors.of(ctx, R.color.black))
+                .backgroundColor(ResHelper.getColor(ctx, R.color.black))
                 .backgroundRadius(0)
 
                 /* 封面 */
@@ -183,11 +184,11 @@ public final class StudioConfig {
 
                 /* 标题 */
                 .nameTextSize(16)
-                .nameTextColor(Colors.of(ctx, R.color.white))
+                .nameTextColor(ResHelper.getColor(ctx, R.color.white))
 
                 /* 信息 */
                 .infoTextSize(12)
-                .infoTextColor(Colors.of(ctx, R.color.white))
+                .infoTextColor(ResHelper.getColor(ctx, R.color.white))
 
                 /* 收藏 */
                 .favoriteIconSize(20)

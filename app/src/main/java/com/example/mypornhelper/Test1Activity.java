@@ -18,6 +18,7 @@ import com.example.pornhelper.video.VideoLite;
 import com.example.pornhelper.video.VideoProfile;
 import com.example.pornhelper.video.VideoProfileConfig;
 import com.example.pornhelper.video.VideoProfileView;
+import com.example.pornhelper.helper.ResHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,9 +39,9 @@ public class Test1Activity extends AppCompatActivity{
         actorProfileView.setConfig(new ActorProfileConfig.Builder()
                 .nameTextSize(20)
                 .avatarRadius(20)
-                .arrowColor(Colors.of(this, R.color.red))
-                .favBackground(Colors.of(this, R.color.white))
-                .favTextColor(Colors.of(this, R.color.black))
+                .arrowColor(ResHelper.getColor(this, R.color.red))
+                .favBackground(ResHelper.getColor(this, R.color.white))
+                .favTextColor(ResHelper.getColor(this, R.color.black))
                 .build()
         );
         actorProfileView.setData(new ActorProfile(
@@ -66,7 +67,7 @@ public class Test1Activity extends AppCompatActivity{
         videoProfileView.setConfig(new VideoProfileConfig.Builder()
                 .titleTextSize(20)
                 .coverRadius(20)
-                .arrowColor(Colors.of(this, R.color.red))
+                .arrowColor(ResHelper.getColor(this, R.color.red))
                 .build()
         );
         List<Cast> castList = new ArrayList<>();

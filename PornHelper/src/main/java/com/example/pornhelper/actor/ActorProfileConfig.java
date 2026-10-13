@@ -7,6 +7,7 @@ import androidx.annotation.DrawableRes;
 
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.pornhelper.R;
+import com.example.pornhelper.helper.ResHelper;
 
 /**
  * =============================================================
@@ -226,7 +227,7 @@ public final class ActorProfileConfig {
         return new Builder()
 
                 /* 容器 */
-                .background(Colors.of(ctx, R.color.black))
+                .background(ResHelper.getColor(ctx, R.color.black))
 
                 /* 头像 */
                 .avatarSize(150)
@@ -238,26 +239,26 @@ public final class ActorProfileConfig {
 
                 /* 名字 */
                 .nameTextSize(16)
-                .nameTextColor(Colors.of(ctx, R.color.white))
+                .nameTextColor(ResHelper.getColor(ctx, R.color.white))
 
                 /* 箭头 */
                 .arrowSize(24)
                 .arrowCollapsed(R.drawable.ic_arrow_down)
                 .arrowExpanded(R.drawable.ic_arrow_up)
-                .arrowColor(Colors.of(ctx, R.color.white))
+                .arrowColor(ResHelper.getColor(ctx, R.color.white))
 
                 /* 信息文字 */
                 .infoTextSize(12)
-                .infoTextColor(Colors.of(ctx, R.color.white))
+                .infoTextColor(ResHelper.getColor(ctx, R.color.white))
 
                 /* 收藏按钮 */
                 .favTextSize(14)
-                .favTextColor(Colors.of(ctx, R.color.red))
-                .favTextColorActive(Colors.of(ctx, R.color.white))
-                .favStroke(Colors.of(ctx, R.color.red))
-                .favStrokeActive(Colors.of(ctx, R.color.red))
-                .favBackground(Colors.of(ctx, R.color.white))
-                .favBackgroundActive(Colors.of(ctx, R.color.red))
+                .favTextColor(ResHelper.getColor(ctx, R.color.red))
+                .favTextColorActive(ResHelper.getColor(ctx, R.color.white))
+                .favStroke(ResHelper.getColor(ctx, R.color.red))
+                .favStrokeActive(ResHelper.getColor(ctx, R.color.red))
+                .favBackground(ResHelper.getColor(ctx, R.color.white))
+                .favBackgroundActive(ResHelper.getColor(ctx, R.color.red))
                 .favStrokeWidth(1)
                 .favCornerRadius(10)
                 .favAddText("添加收藏")

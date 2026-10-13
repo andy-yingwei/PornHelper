@@ -7,6 +7,7 @@ import androidx.annotation.DrawableRes;
 
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.pornhelper.R;
+import com.example.pornhelper.helper.ResHelper;
 
 /**
  * ============================================================
@@ -165,7 +166,7 @@ public final class VideoLiteConfig {
      * ========================================================= */
     public static VideoLiteConfig defaultConfig(Context ctx) {
         return new Builder()
-                .backgroundColor(Colors.of(ctx, R.color.white))
+                .backgroundColor(ResHelper.getColor(ctx, R.color.white))
                 .backgroundRadius(0)
 
                 .coverHeight(240)
@@ -176,10 +177,10 @@ public final class VideoLiteConfig {
                 .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
 
                 .titleTextSize(18)
-                .titleTextColor(Colors.of(ctx, R.color.black_10))
+                .titleTextColor(ResHelper.getColor(ctx, R.color.black_10))
 
                 .infoTextSize(12)
-                .infoTextColor(Colors.of(ctx, R.color.black_10))
+                .infoTextColor(ResHelper.getColor(ctx, R.color.black_10))
 
                 .favoriteIconSize(20)
                 .favoriteIcon(R.drawable.ic_star_fill)
